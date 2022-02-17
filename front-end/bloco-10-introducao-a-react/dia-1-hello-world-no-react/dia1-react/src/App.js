@@ -1,24 +1,19 @@
 import React from 'react';
 import './App.css';
-
-const Task = (value) => {
-return (
-<li>{value}</li>
-);
-}
-
-const compromissos = ['acordar', 'comer', 'codar', 'dormir'];
+import Content from './Content';
+import Footer from './Footer';
+import Header from './Header';
 
 function App () {
-return compromissos.map((compromisso) => Task(compromisso)) 
+return (
+    <div>
+     <Header/>
+     <Footer/>
+     <Content/>
+    </div>
+)
 
  }
  
 
 export default App;
-
-
-
-
-
-
